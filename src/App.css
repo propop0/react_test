@@ -1,42 +1,26 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.container {
+    display: flex;
+    justify-content: center; /* Центрує елементи по горизонталі */
+    align-items: center;     /* Центрує елементи по вертикалі */
+    min-height: 100vh;       /* Задає мінімальну висоту контейнера як висоту вікна браузера */
+    flex-wrap: wrap;         /* Дозволяє карткам переноситись на новий рядок */
+    gap: 20px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.product-card {
+
+  border: 1px solid #ccc; /* Додає сіру рамку */
+  border-radius: 10px; /* Закруглює кути на 10px */
+  padding: 15px; /* Додає внутрішні відступи */
+  width: 200px; /* Фіксована ширина */
+  text-align: center; /* Вирівнює текст по центру */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Додає тінь */
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+/* Стилі для зображення всередині картки */
+.product-card img {
+  width: 100%; /* Зображення займає всю ширину картки */
+  height: auto; /* Зберігає пропорції */
+  border-radius: 8px; /* Закруглює кути зображення */
+  object-fit: cover; /* Обрізає зображення, щоб воно повністю заповнило контейнер */
 }
