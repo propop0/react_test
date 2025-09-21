@@ -1,4 +1,4 @@
-// App.jsx
+import React from 'react'
 import './App.css'
 
 import ProductCard from './components/ProductCard';
@@ -9,7 +9,7 @@ function App() {
     { id: 2, name: "Ноутбук", price: 15000, imageUrl: "https://lh6.googleusercontent.com/6w14yWXR5N9NkZyaT6mCwK0TGexXNFazvUztvrCEv7hM4JXWt6CsN2xeowBLON8k1Hkc6sT91mJDyYHVN_1okxLoMZ116i_qvmQl-IcYrEBwApB5pgvHd2pCqgXxmPL2FhWQ5JcL"},
   ];
   return (
-    <div className="container"> 
+    <div className="container">
       {products.map(product => (
         <ProductCard
           key={product.id}

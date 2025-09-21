@@ -1,20 +1,28 @@
+body, html, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 .container {
-    display: flex;
-    justify-content: center; /* Центрує елементи по горизонталі */
-    align-items: center;     /* Центрує елементи по вертикалі */
-    min-height: 100vh;       /* Задає мінімальну висоту контейнера як висоту вікна браузера */
-    flex-wrap: wrap;         /* Дозволяє карткам переноситись на новий рядок */
-    gap: 20px;
+  display: flex;
+  justify-content: center; /* Centers items horizontally */
+  align-items: center;     /* Centers items vertically */
+  min-height: 100vh;       /* Sets minimum height of the container to the viewport height */
+  width: 100%;             /* Ensures the container spans the full width of the page */
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .product-card {
 
-  border: 1px solid #ccc; /* Додає сіру рамку */
-  border-radius: 10px; /* Закруглює кути на 10px */
+  border: 9px solid #ccc; /* Додає сіру рамку */
+  border-radius: 10%; /* Закруглює кути на 10px */
   padding: 15px; /* Додає внутрішні відступи */
-  width: 200px; /* Фіксована ширина */
+  width: 300px; /* Фіксована ширина */
   text-align: center; /* Вирівнює текст по центру */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Додає тінь */
+  box-shadow: 0 4px 8px rgba(166, 10, 10, 0.855); /* Додає тінь */
 }
 
 /* Стилі для зображення всередині картки */
